@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Lesson 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .area {
+            width: 400px;
+            height: 400px;
+            border: 4px solid red;
+            position: relative;
+            overflow: hidden;
+            /* display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; */
+        }
+        
+        .figure {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            border: 1px solid #fff;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+        .rectangle {
+            width: 40px;
+            height: 25px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            border: 1px solid #fff;
+        }
+        .oval {
+            width: 30px;
+            height: 15px;
+            border-radius: 50% 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <button>Click 1</button>
+    <button>Click 2</button>
+    <button class="btn">Click 3</button>
+    <button class="btn">Click 4</button>
+    <button id="btn1">Click 5</button> -->
+
+    <!-- <div class="box">
+        <button class="btn">Clicker</button>
+        <button class="btn">Clicker</button>
+    </div> -->
+
+    <input type="color"
+           id="newColor">
+    <div>
+        <label>
+            Circle
+            <input type="radio"
+                   value="circle"
+                   name="figure"
+                   checked>
+        </label>
+        <label>
+            Square
+            <input type="radio"
+                   value="square"
+                   name="figure">
+        </label>
+        
+        <label>
+            rectangle
+            <input type="radio"
+                   value="rectangle"
+                   name="figure">
+        </label>
+        <label>
+            oval
+            <input type="radio"
+                   value="oval"
+                   name="figure">
+        </label>
+    </div>
+    <div class="area"
+         id="area">
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+</body>
+
+</html>
