@@ -1,0 +1,1 @@
+var controller=function(){return{init:function(){model.get("products",function(a){view.render("products",a)});model.get("cart",function(a){view.render("cart",a)});model.get("total",function(a){view.render("total",a)});view.listen("addBtn",function(a){model.addToCart(a,function(a,b){view.render("cart",a);view.render("total",b)})})}}}();
