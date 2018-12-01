@@ -15,10 +15,10 @@ var view = (function () {
     var renderers = {
         products: function (data){
 
-            let html = '';
+            var html = '';
 
             for(i=0;i<data.length;i++){
-                let s = tmpl.productsItem;
+                var s = tmpl.productsItem;
                 s = s.replace('{{name}}', data[i].name);
                 s = s.replace('{{price}}', data[i].price);
                 s = s.replace('{{id}}', i);
@@ -30,10 +30,10 @@ var view = (function () {
         
         cart: function (data) {
             
-            let html = '';
+            var html = '';
     
             for(i=0;i<data.length;i++){
-                let s = tmpl.cartItem;
+                var s = tmpl.cartItem;
                 s = s.replace('{{name}}', data[i].name);
                 s = s.replace('{{price}}', data[i].price);
                 html += s;
@@ -44,7 +44,7 @@ var view = (function () {
         },
 
         total: function (data) {
-            let s = tmpl.total;
+            var s = tmpl.total;
             s = s.replace('{{total}}', data)
             sel.total.innerHTML = s;
         },

@@ -1,2 +1,1 @@
-var model=function(){function e(){var a=0;for(i=0;i<b.length;i++)a+=b[i].price;return a}var c=[{name:"iPhone XS Max",price:37174},{name:"Samsung Galaxy Note 9",price:21103},{name:"Xiaomi Redmi Note 5",price:4193},{name:"Samsung Galaxy S8",price:12718},{name:"OnePlus 6",price:15093},{name:"Xiaomi Mi 8",price:10761}],b=[],d={products:function(a){a(c)},cart:function(a){a(b)},total:function(a){a(e())}};return{get:function(a,b){d[a](b)},addToCart:function(a,d){b.push({name:c[a].name,price:c[a].price});
-d(b,e())}}}();
+

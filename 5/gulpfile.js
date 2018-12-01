@@ -65,4 +65,4 @@ gulp.task('build', function () {
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('default', ['html','sass','server','js','img','watch', 'build']);
+gulp.task('start', ['html','sass','server','js','img','watch', 'build']);

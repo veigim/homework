@@ -39,7 +39,7 @@ var model = (function () {
         
     function getTotal() {
             
-            let sum = 0;
+            var sum = 0;
             for(i=0;i<CART.length;i++) {
                 sum += CART[i].price;
             };
@@ -53,7 +53,7 @@ var model = (function () {
          },
 
          addToCart: function (itemId, callback) {
-            let newItem = {
+            var newItem = {
                 name: PRODUCTS[itemId].name,
                 price: PRODUCTS[itemId].price
             };
